@@ -16,12 +16,11 @@ h2, p {
 /* Full-width nav bar background */
 nav {
   width: 100%;
-  background-color: #25a538;
+  background-color: #1c842cd4;
 }
 
 /* Container inside nav lines up with page content */
 .nav-container {
-  max-width: 1200px;   /* optional: keeps it from stretching too wide on huge screens */
   margin: 0 auto;
   padding: 0 30px;     /* same side spacing as main */
 }
@@ -49,5 +48,5 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #13651f;
+  background-color: #13651fc1;
 }
