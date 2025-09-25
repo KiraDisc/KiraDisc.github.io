@@ -1,26 +1,40 @@
+/* Reset margins and set base text */
 body {
-    margin-top: 10px; margin-right: 30px; margin-bottom: 10px; margin-left: 30px;
-    font-size: 16px;
-
-    
+  margin: 0;
+  padding: 10px 30px; /* keeps content indented */
+  font-size: 16px;
 }
 
-h2, p {
-margin: 20px;
+h2,
+p {
+  margin: 20px;
 }
 
+/* Full-width nav bar background */
+nav {
+  background-color: #25a538;
+}
+
+/* Inner container keeps nav text aligned with page content */
+.nav-container {
+  margin: 0 auto;
+  padding: 0 30px; /* matches body padding */
+}
+
+/* Reset list */
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #25a538;
 }
 
+/* Horizontal layout */
 nav ul li {
   float: left;
 }
 
+/* Link styles */
 nav ul li a {
   display: block;
   color: white;
