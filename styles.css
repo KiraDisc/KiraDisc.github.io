@@ -1,27 +1,32 @@
-/* Reset margins and set base text */
+/* Remove default margins */
 body {
   margin: 0;
-  padding: 10px 30px; /* keeps content indented */
   font-size: 16px;
 }
 
-h2,
-p {
+/* Page content should have padding */
+main {
+  padding: 10px 30px;
+}
+
+h2, p {
   margin: 20px;
 }
 
 /* Full-width nav bar background */
 nav {
+  width: 100%;
   background-color: #25a538;
 }
 
-/* Inner container keeps nav text aligned with page content */
+/* Container inside nav lines up with page content */
 .nav-container {
+  max-width: 1200px;   /* optional: keeps it from stretching too wide on huge screens */
   margin: 0 auto;
-  padding: 0 30px; /* matches body padding */
+  padding: 0 30px;     /* same side spacing as main */
 }
 
-/* Reset list */
+/* Reset list styling */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -34,7 +39,7 @@ nav ul li {
   float: left;
 }
 
-/* Link styles */
+/* Links */
 nav ul li a {
   display: block;
   color: white;
