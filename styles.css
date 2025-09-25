@@ -11,6 +11,33 @@ body {
   box-sizing: border-box;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between; /* left text, right image */
+  align-items: flex-start;
+  gap: 20px;                     /* space between columns */
+}
+
+.text {
+  flex: 1;  /* left column takes remaining width */
+}
+
+.image-column {
+  text-align: center; /* centers image and caption */
+}
+
+.profile-pic {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.caption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+}
+
 /* Full-width nav bar background */
 nav {
   background-color: #25a538;
