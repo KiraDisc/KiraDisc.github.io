@@ -14,29 +14,36 @@ body {
 .header {
   display: flex;
   justify-content: space-between; /* left text, right image */
-  align-items: flex-start;
-  gap: 20px;                     /* space between columns */
+  align-items: flex-start;        /* align tops */
+  gap: 20px;                      /* space between columns */
 }
 
+/* Left column takes remaining space */
 .text {
-  flex: 1;  /* left column takes remaining width */
+  flex: 1;
 }
 
+/* Right column: image + caption */
 .image-column {
-  text-align: center; /* centers image and caption */
+  flex-shrink: 0;     /* prevent shrinking */
+  text-align: center; /* center caption under image */
 }
 
 .profile-pic {
-  width: 200px;
-  height: auto;
-  border-radius: 50%;
+  max-width: 200px;   /* image will not exceed this width */
+  width: 100%;        /* scales down on small screens */
+  height: auto;       /* maintain aspect ratio */
+  border-radius: 50%; /* makes the image circular */
+  object-fit: cover;  /* ensures it looks good if image isn't square */
 }
 
+/* Caption styling */
 .caption {
   font-size: 0.9em;
   color: #555;
   margin-top: 5px;
 }
+
 
 /* Full-width nav bar background */
 nav {
