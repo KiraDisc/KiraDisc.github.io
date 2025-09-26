@@ -44,6 +44,10 @@ body {
   margin-top: 5px;
 }
 
+.image-link{
+    width:20px
+}
+
 
 /* Full-width nav bar background */
 nav {
