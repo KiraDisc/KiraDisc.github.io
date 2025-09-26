@@ -44,10 +44,16 @@ body {
   margin-top: 5px;
 }
 
-.image-link{
-    width:20px
+.image-link img {
+  width: 40px;       /* make the icons bigger */
+  height: auto;      /* keeps proportions */
+  vertical-align: middle; /* keeps them aligned */
 }
 
+.image-link {
+  text-decoration: none; /* remove underline */
+  margin-right: 10px;    /* spacing between icons */
+}
 
 /* Full-width nav bar background */
 nav {
