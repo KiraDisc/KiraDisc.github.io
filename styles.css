@@ -6,14 +6,14 @@ body {
 /* shared horizontal padding for nav + content */
 .page-container {
   padding: 0 30px;
-  max-width: 1200px; /* optional: keep it centered on big screens */
+  max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 .header {
   display: flex;
-  justify-content: space-between; /* left text, right image */
+  justify-content: space-between;
   align-items: flex-start;        /* align tops */
   gap: 20px;                      /* space between columns */
 }
@@ -23,39 +23,35 @@ body {
   flex: 1;
 }
 
-/* Right column: image + caption */
 .image-column {
-  flex-shrink: 0;     /* prevent shrinking */
-  text-align: center; /* center caption under image */
+  flex-shrink: 0;
+  text-align: center;
 }
 
 .profile-pic {
-  max-width: 200px;   /* image will not exceed this width */
-  width: 100%;        /* scales down on small screens */
-  height: auto;       /* maintain aspect ratio */
-  border-radius: 50%; /* makes the image circular */
-  object-fit: cover;  /* ensures it looks good if image isn't square */
+  max-width: 200px;   
+  width: 100%;        
+  height: auto;      
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-/* Caption styling */
 .caption {
   font-size: 1.5em;
   color: #555;
   margin-top: 5px;
 }
 
-.image-link img {
-  width: 40px;       /* make the icons bigger */
-  height: auto;      /* keeps proportions */
-  vertical-align: middle; /* keeps them aligned */
-}
-
 .image-link {
-  text-decoration: none; /* remove underline */
-  margin-right: 10px;    /* spacing between icons */
+  text-decoration: none;
+  margin-right: 12px;
 }
 
-/* Full-width nav bar background */
+.image-link ion-icon {
+  font-size: 40px;
+  vertical-align: middle;
+}
+
 nav {
   background-color: #25a538;
 }
